@@ -1,0 +1,156 @@
+/*affects all pages*/
+* {
+    background-color: rgb(49, 133, 230);
+}
+
+/*affects all pages*/
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 90vw;
+    background-color: rgb(49, 133, 230);
+}
+
+/*affects all pages*/
+/*page headers*/
+h1 {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    margin-bottom: 0.2rem;
+    animation-duration: 3s;
+    animation-name: slidein;
+    animation-iteration-count: 1;
+    animation-direction: alternate;
+}
+
+/*function for headers to animate*/
+@keyframes slidein {
+    from {
+        margin-left: 200%;
+        width: 300%;
+    }
+    to {
+        margin-left: 0%;
+        width: 100%;
+    }
+}
+
+/*affects index page only*/
+img {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    padding-top: 1rem;
+}
+
+/*affects index page only*/
+.play {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: firebrick;
+    color: silver;
+    width: 20%;
+    margin-top: 10%;
+}
+
+/*affects round1 and round2 pages*/
+.next {
+    display: flex;
+    align-self: flex-end;
+    background-color: firebrick;
+    color: silver;
+    padding: 10px;
+    margin-right: 20%;
+    margin-top: 10%;
+}
+
+/*affects all pages*/
+footer {
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+    align-items: center;
+    justify-items: center;
+    width: 60%;
+    background-color: orange;
+}
+
+/*affects round1 and round2 pages*/
+/*gameboard shape*/
+.grid {
+    display: grid;
+    width: 100%;
+    height: auto;
+    grid-auto-flow: column;
+    grid-template-rows: repeat(6, 25px);
+    grid-template-columns: repeat(6, 15vw);
+}
+
+/*affects all pages except index*/
+/*gameboard appearance and color*/
+.box {
+    border: 2px;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: black;
+    color: white;
+    background-color: firebrick;
+    text-align: center;
+}
+
+/*affects all pages except index*/
+.input {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding-top: 2rem;
+}
+
+/*affects round1 and round2 pages*/
+.buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 180px;
+}
+
+/*affects round1 and round2 pages*/
+/*shows player scores*/
+.scores {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+/*affects only final page*/
+/*customizes final category from original gameboard*/
+.final .box {
+    margin: 1rem;
+    width: 80vw;
+}
+
+/*affects only final page*/
+/*customizes final question from original gameboard*/
+.box2 {
+    border: 2px;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: black;
+    color: firebrick;
+    background-color: white;
+    text-align: center;
+    margin: 1rem;
+    padding: 10%;
+}
+
+/*affects only final page*/
+.input input {
+    margin-bottom: 1rem;
+}
