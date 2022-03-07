@@ -1,6 +1,7 @@
 /*affects all pages*/
 * {
     background-color: rgb(49, 133, 230);
+    box-sizing: border-box;
 }
 
 /*affects all pages*/

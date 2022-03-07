@@ -11,63 +11,64 @@
   <div class="wrapper">
     
     <h1><span>First Round!</span></h1>
-    <h2>Player Turn</h2>
+    <h2 id="playerTurn"></h2>
     
     <main class="game">
       <section class="grid">
-        <div class="box">CATEGORY</div>
-        <div class="box">100</div>
-        <div class="box">200</div>
-        <div class="box">300</div>
-        <div class="box">400</div>
-        <div class="box">500</div>
-        <div class="box">CATEGORY</div>
-        <div class="box">100</div>
-        <div class="box">200</div>
-        <div class="box">300</div>
-        <div class="box">400</div>
-        <div class="box">500</div>
-        <div class="box">CATEGORY</div>
-        <div class="box">100</div>
-        <div class="box">200</div>
-        <div class="box">300</div>
-        <div class="box">400</div>
-        <div class="box">500</div>
-        <div class="box">CATEGORY</div>
-        <div class="box">100</div>
-        <div class="box">200</div>
-        <div class="box">300</div>
-        <div class="box">400</div>
-        <div class="box">500</div>
-        <div class="box">CATEGORY</div>
-        <div class="box">100</div>
-        <div class="box">200</div>
-        <div class="box">300</div>
-        <div class="box">400</div>
-        <div class="box">500</div>
-        <div class="box">CATEGORY</div>
-        <div class="box">100</div>
-        <div class="box">200</div>
-        <div class="box">300</div>
-        <div class="box">400</div>
-        <div class="box">500</div>
+          <div class="box category">CATEGORY</div>
+          <button type="button" class="box card">100</button>
+          <div class="box card">200</div>
+          <div class="box card">300</div>
+          <div class="box card">400</div>
+          <div class="box card">500</div>
+          <div class="box category">CATEGORY</div>
+          <div class="box card">100</div>
+          <div class="box card">200</div>
+          <div class="box card">300</div>
+          <div class="box card">400</div>
+          <div class="box card">500</div>
+          <div class="box category">CATEGORY</div>
+          <div class="box card">100</div>
+          <div class="box card">200</div>
+          <div class="box card">300</div>
+          <div class="box card">400</div>
+          <div class="box card">500</div>
+          <div class="box category">CATEGORY</div>
+          <div class="box card">100</div>
+          <div class="box card">200</div>
+          <div class="box card">300</div>
+          <div class="box card">400</div>
+          <div class="box card">500</div>
+          <div class="box category">CATEGORY</div>
+          <div class="box card">100</div>
+          <div class="box card">200</div>
+          <div class="box card">300</div>
+          <div class="box card">400</div>
+          <div class="box card">500</div>
+          <div class="box category">CATEGORY</div>
+          <div class="box card">100</div>
+          <div class="box card">200</div>
+          <div class="box card">300</div>
+          <div class="box card">400</div>
+          <div class="box card">500</div>
       </section>
       <section class="input">
         <input type="text" placeholder="User input..."> 
         <div class="buttons">
-          <button>GUESS</button>
-          <button>PASS</button>
+          <button id="guessButton">GUESS</button>
+          <button id="passButton">PASS</button>
         </div>
       </section>
       <section class="scores">
-        <p>Player 1 Score: 0</p>
-        <p>Player 2 Score: 0</p>
+        <p>Player 1 Score: <span id="player1Score">0</span></p>
+        <p>Player 2 Score: <span id="player2Score">0</span></p>
       </section>
     </main>
-      <button class="next" onclick="window.location.href ='round-2.html';">Next Round</button>
+      <button class="next" id="nextButton" onclick="window.location.href ='round-2.html';">Next Round</button>
     <footer>
       Footer Site Information
     </footer>
   </div>
+  <script src="script.js"></script>
 </body>
 </html>
