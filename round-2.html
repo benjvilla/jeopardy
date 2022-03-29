@@ -1,3 +1,4 @@
+<!--document head boilerplate-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,13 +8,16 @@
   <title>Jeopardy</title>
   <link rel="stylesheet" href="styles/styles.css" type="text/css" />
 </head>
+<!--body element-->
 <body>
+  <!--div element containing second game board-->
   <div class="wrapper">
-    
+    <!--display for game and player turn-->
     <h1>Second Round!</h1>
     <h2>Player Turn</h2>
     
     <main class="game">
+      <!--game grid-->
       <section class="grid">
         <div class="box category">CATEGORY</div>
         <div class="box">200</div>
@@ -53,22 +57,28 @@
         <div class="box">1000</div>
       </section>
       <section class="input">
+        <!--text field for user input-->
         <input type="text" placeholder="User input..."> 
+        <!--game buttons-->
         <div class="buttons">
           <button class="gp">GUESS</button>
           <button class="gp">PASS</button>
         </div>
       </section>
+      <!--display for player scores-->
       <section class="scores">
         <p>Player 1 Score: 0</p>
         <p>Player 2 Score: 0</p>
       </section>
     </main>
-      <button class="next" onclick="window.location.href ='final-jeopardy.html';">Next Round</button>
+    <!--button to link to next html page-->
+    <button class="next" onclick="window.location.href ='final-jeopardy.html';">Next Round</button>
+    <!--footer element-->
     <footer>
       Footer Site Information
     </footer>
   </div>
+  <!--import script-->
   <script src="script.js"></script>
 </body>
 </html>
