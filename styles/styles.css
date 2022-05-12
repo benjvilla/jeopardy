@@ -104,6 +104,7 @@ footer {
     background-color: firebrick;
     text-align: center;
     word-wrap: break-word;
+    overflow: hidden;
 }
 
 /*affects all pages except index*/
